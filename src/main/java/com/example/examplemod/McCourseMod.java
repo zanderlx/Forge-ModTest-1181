@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.block.ModBlocks;
 import com.example.examplemod.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -35,6 +36,8 @@ public class McCourseMod
 
         // Use the above eventBus to register the mod items
         ModItems.register(eventBus);
+        // Use the above eventBus to register the mod blocks
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

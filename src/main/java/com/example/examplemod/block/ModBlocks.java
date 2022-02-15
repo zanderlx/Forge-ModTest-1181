@@ -33,6 +33,16 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
 
     /***
+     * Create the registry object for the custom block: COBALT_ORE
+     * Type is Material.STONE (same level as STONE)
+     * Strength is f.0 hardness that controls time to break block (same level as STONE)
+     * Will be placed in the creative misc tab
+     */
+    public static final RegistryObject<Block> COBALT_ORE = registerBlock("cobalt_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+
+    /***
      * Create registry object of a generic block that is placeable in the world
      * @param name The name of the block
      * @param block Supplier with the properties of the block
